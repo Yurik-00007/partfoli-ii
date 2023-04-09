@@ -1,0 +1,64 @@
+@import "../../common/styles/sass/variables";
+
+.skill {
+  border: 1px solid transparent;
+  border-radius: 5%;
+  width: 300px;
+  background-color: $bgTextColor;
+  padding: 10px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+
+
+  .skillDivIcon {
+    width: 120px;
+    height: 120px;
+    position: relative;
+    z-index: 6;
+
+    .skillDivIconBG {
+      border-radius: 50%;
+      width: 120px;
+      height: 120px;
+      background: $bthColor;
+      top: 0;
+      z-index: 99;
+
+      .skillIcon {
+        width: 60px;
+        position: absolute;
+        top: 25%;
+        left: 75%;
+        margin-left: -50%;
+        z-index: 1;
+
+      }
+    }
+  }
+
+  .skillTitle {
+    font-family: Poppins, sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    color: #333333;
+    line-height: 1;
+  }
+
+  .skillDescription {
+    font-family: Lato, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(30 / 18);
+    color: #666;
+    text-align: center;
+  }
+}
+
+
+
+
+
+

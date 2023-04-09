@@ -1,0 +1,76 @@
+@import "../../../common/styles/sass/mixins";
+.genTitle {
+  @include titleH3(black)
+/*  font-family: Poppins, sans-serif;
+  font-weight: 700;
+  font-size: 50px;
+  color: #111;
+  position: relative;
+  padding-bottom: 30px;
+  line-height: 1;
+
+  &::before {
+    display: block;
+    content: '';
+    position: absolute;
+    left: 50%;
+    width: 90px;
+    height: 2px;
+    background: #ccc;
+    bottom: 2px;
+    margin-left: -45px;
+  }
+
+  &::after {
+    display: block;
+    content: '';
+    position: absolute;
+    left: 50%;
+    width: 30px;
+    height: 6px;
+    background: grey;
+    bottom: 0;
+    margin-left: -15px;
+  }*/
+}
+
+.genTitleWhite {
+  @include titleH3(white)
+
+  /*
+  font-family: Poppins, sans-serif;
+  font-weight: 700;
+  font-size: 50px;
+  color: #fff;
+  position: relative;
+  padding-bottom: 30px;
+  line-height: 1;
+
+  &::before {
+    display: block;
+    content: '';
+    position: absolute;
+    left: 50%;
+    width: 90px;
+    height: 2px;
+    background: #ccc;
+    bottom: 2px;
+    margin-left: -45px;
+  }
+
+  &::after {
+    display: block;
+    content: '';
+    position: absolute;
+    left: 50%;
+    width: 30px;
+    height: 6px;
+    background: grey;
+    bottom: 0;
+    margin-left: -15px;
+  }
+  */
+}
+
+
+

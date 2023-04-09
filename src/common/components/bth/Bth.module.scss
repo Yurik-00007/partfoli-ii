@@ -1,0 +1,23 @@
+@import "../../styles/sass/variables";
+
+.projectBth {
+  padding: 10px 20px;
+  line-height: 46px;
+  background: $bthColor;
+  padding: 0 30px;
+  display: inline-block;
+  color: #333;
+  border: 2px solid $bthColor;
+  font-family: Montserrat,sans-serif;
+  font-size: 15px;
+  cursor: pointer;
+ box-shadow: 0 3px 10px 0 rgba(0,0,0,.1);
+  border-radius: 50px;
+  margin: 30px auto;
+}
+
+
+
+
+
+

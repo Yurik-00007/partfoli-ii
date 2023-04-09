@@ -1,0 +1,17 @@
+@import "../common/styles/sass/variables";
+
+.nav{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    .navLink{
+        padding: 0.5rem 1rem;
+        color: #333;
+        font-size: 13px;
+        font-family: $labelFontFamily;
+        font-weight: 400;
+        line-height: calc(30/18);
+        text-decoration:none;
+    }
+}

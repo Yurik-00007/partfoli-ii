@@ -1,0 +1,49 @@
+@import "src/common/styles/sass/variables";
+
+@mixin text($fontFamily,$fontSize,$lineHeight){
+  font-family: $fontFamily;
+  font-size: $fontSize;
+  line-height: $lineHeight;
+  color: $textColor;
+}
+
+@mixin icon{
+  background-size: cover;
+  background-position: left;
+  background-repeat: no-repeat;
+}
+
+@mixin titleH3($fontColor){
+  font-family: Poppins, sans-serif;
+  font-weight: 700;
+  font-size: 50px;
+  color: $fontColor;
+  position: relative;
+  padding-bottom: 30px;
+  line-height: 1;
+  z-index: 1;
+
+  &::before {
+    display: block;
+    content: '';
+    position: absolute;
+    left: 50%;
+    width: 90px;
+    height: 2px;
+    background: #ccc;
+    bottom: 2px;
+    margin-left: -45px;
+  }
+
+  &::after {
+    display: block;
+    content: '';
+    position: absolute;
+    left: 50%;
+    width: 30px;
+    height: 6px;
+    background: grey;
+    bottom: 0;
+    margin-left: -15px;
+  }
+}

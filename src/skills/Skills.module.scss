@@ -1,0 +1,52 @@
+@import "../common/styles/sass/variables";
+
+.skillsBlock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+
+  .skillsContainer {
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+
+
+    .skillsText {
+      font-family: $titleFontFamily;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: calc(30 / 18);
+      color: #666;
+      text-align: center;
+      margin-top: -30px;
+    }
+
+    .skills {
+      border: 1px solid;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: stretch;
+      flex-wrap: wrap;
+      @media screen and (max-width: 1131px) {
+        justify-content: space-around;
+        gap: 20px;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

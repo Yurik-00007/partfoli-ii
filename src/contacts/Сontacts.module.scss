@@ -1,0 +1,101 @@
+@import "../common/styles/sass/variables";
+
+.contactsBlock {
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+
+  &::after {
+    content: 'asfasf';
+    position: absolute;
+    background-color: black;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.5;
+  }
+
+  .contactsContainer {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .contactsForm {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-bottom: 30px;
+    position: relative;
+    z-index: 1;
+
+    @media screen and (max-width: 700px) {
+      width: 100%;
+    }
+
+    .contactsLabel {
+      color: #ccc;
+      font-size: 13px;
+      font-family: $labelFontFamily;
+      font-weight: 400;
+      line-height: calc(30 / 18);
+    }
+
+    input, textarea {
+      border-radius: 3px;
+      width: 100%;
+    }
+  }
+
+  .contactsBig {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    z-index: 1;
+    @media screen and (max-width: 552px) {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .contBigSpan {
+      margin-bottom: 10px;
+      font-family: $textFontFamily;
+      font-weight: 700;
+      color: $bgTextColor;
+      font-size: 20px;
+      line-height: 1.5;
+    }
+  }
+
+  .contactsSmall {
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    //background-color: blue;
+    z-index: 1;
+
+    .contSmallSpan {
+
+      font-family: Lato, sans-serif;
+      font-weight: 400;
+      font-size: 18px;
+      background-color: transparent;
+      color: $bgTextColor;
+      line-height: calc(30 / 18);
+    }
+  }
+
+}
+
+
+
+
+

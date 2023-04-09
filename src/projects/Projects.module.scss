@@ -1,0 +1,40 @@
+.projectsBlock{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+
+    .projectsContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .projects{
+        border: 1px solid;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: stretch;
+        gap:20px;
+        @media screen and (max-width: 1157px) {
+            justify-content:center;
+        }
+        &:nth-last-child(1){
+            padding-bottom: 30px;
+        }
+    }
+
+
+}
+
+
+
+
+
+
+
+
+

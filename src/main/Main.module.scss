@@ -1,0 +1,71 @@
+@import "../common/styles/sass/variables";
+@import "../common/styles/sass/mixins";
+
+
+.mainBlock {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background-color: $bgTextColor;
+    @media screen and (max-width: 990px) {
+        min-height: 50vh;
+    }
+    .mainContainer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        position: relative;
+        .mainTextBlock {
+            width: 60%;
+            .mainTitle{
+                font-size: 60px;
+                color: #333;
+                line-height: 1;
+                font-family: $textFontFamily;
+                font-weight: 700;
+                position: relative;
+                z-index: 1;
+            }
+            .mainText{
+                font-size: 22px;
+                color: #666;
+                font-family: $titleFontFamily;
+                font-weight: 400;
+                line-height: calc(30/18);
+                position: relative;
+                z-index: 1;
+            }
+            @media screen and (max-width: 990px) {
+                width: 100%;
+            }
+        }
+        .mainPhotoBlock {
+            background-color: #c4c4cb;
+            width: 35%;
+            height: 600px;
+            @include icon;
+            @media screen and (max-width: 990px) {
+                display: none;
+            }
+            .mainPhoto{
+                width: 600px;
+                margin-left: -100px;
+                background-color: #c4c4cb;
+                /*background-size: cover;*/
+                /*background-position:right;*/
+                /*background-repeat: no-repeat;*/
+            }
+        }
+        
+
+
+    }
+}
+
+
+
+
+
+
+

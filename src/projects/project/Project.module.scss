@@ -1,0 +1,54 @@
+@import "../../common/styles/sass/variables";
+.project {
+    max-width: 420px;
+    background-color: $bgTextColor;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+    @media screen and(max-width: 700px) {
+        max-width: 300px;
+        align-items: center;
+    }
+
+    .projectImg {
+        min-width: 420px;
+        height: 300px;
+        border-radius: 10px;
+        background-color: #C4C4C4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+
+        @media screen and(max-width: 700px) {
+            max-width: 300px;
+        }
+
+    }
+    .projectTitle {
+        font-family: $textFontFamily;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 1.5;
+        color: #333;
+    }
+
+    .projectDescription {
+        font-family: $titleFontFamily;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: calc(30/18);
+        color: #666;
+        text-align: left;
+    }
+}
+
+
+
+
+
+

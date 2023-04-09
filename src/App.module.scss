@@ -1,0 +1,9 @@
+@import "./common/styles/sass/variables";
+.App .appDiv:nth-child(2n) {
+    background-color: $bgTextColor;
+}
+
+/*
+background-color: #F5F5F5;
+*/
+
