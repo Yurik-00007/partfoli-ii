@@ -7,8 +7,10 @@
     align-items: center;
     min-height: 100vh;
     background-color: $bgTextColor;
+    padding-bottom: 100px;
     @media screen and (max-width: 990px) {
         min-height: 50vh;
+
     }
     .mainContainer {
         display: flex;
@@ -26,6 +28,9 @@
                 font-weight: 700;
                 position: relative;
                 z-index: 1;
+                @media screen and (max-width: 990px) {
+                    font-size: 50px;
+                }
             }
             .mainText{
                 font-size: 22px;
@@ -57,7 +62,6 @@
                 /*background-repeat: no-repeat;*/
             }
         }
-        
 
 
     }

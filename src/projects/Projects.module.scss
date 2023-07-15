@@ -3,6 +3,8 @@
     justify-content: space-between;
     align-items: center;
     min-height: 100vh;
+    padding-bottom: 100px;
+
 
     .projectsContainer{
         display: flex;
@@ -12,12 +14,11 @@
     }
 
     .projects{
-        border: 1px solid;
         width: 100%;
         display: flex;
-        flex-wrap: wrap;
         justify-content: space-between;
-        align-items: stretch;
+        align-items: flex-start;
+        flex-wrap: wrap;
         gap:20px;
         @media screen and (max-width: 1157px) {
             justify-content:center;

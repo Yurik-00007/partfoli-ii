@@ -8,6 +8,8 @@
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
+  padding-bottom: 100px;
+
 
   &::after {
     content: 'asfasf';
@@ -56,7 +58,7 @@
   .contactsBig {
     width: 100%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     z-index: 1;
     @media screen and (max-width: 552px) {
       flex-direction: column;

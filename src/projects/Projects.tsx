@@ -4,7 +4,6 @@ import styleContainer from '../common/styles/Container.module.scss'
 import Project from "./project/Project";
 import todoImg from './../assets/img/todo-list.png'
 import socialImg from './../assets/img/social-netwirk.jpg'
-import {Bth} from "../common/components/bth/Bth";
 import {Title} from "../common/components/title/Title";
 
 
