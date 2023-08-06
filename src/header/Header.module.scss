@@ -5,6 +5,10 @@
     align-items: center;
     min-height: 10vh;
     background-color: $bgTextColor;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
 
 
     .headerContainer{

@@ -4,10 +4,11 @@
 
 .mainBlock {
     display: flex;
+    justify-content: right;
     align-items: center;
     min-height: 100vh;
     background-color: $bgTextColor;
-    padding-bottom: 100px;
+    padding: 150px 0;
     @media screen and (max-width: 990px) {
         min-height: 50vh;
 
@@ -15,7 +16,7 @@
     .mainContainer {
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: center;
         flex-wrap: wrap;
         position: relative;
         .mainTextBlock {
@@ -45,21 +46,27 @@
                 width: 100%;
             }
         }
+        .tilt{
+            height: 250px;
+            width: 250px;
+            @media screen and (max-width: 990px) {
+                display: none;
+            }
+        }
         .mainPhotoBlock {
-            background-color: #c4c4cb;
-            width: 35%;
-            height: 600px;
+            /*background-color: #c4c4cb;*/
+            width: 120%;
+            height: 500px;
             @include icon;
             @media screen and (max-width: 990px) {
                 display: none;
             }
             .mainPhoto{
-                width: 600px;
-                margin-left: -100px;
+                width: 100%;
+                /*
+                 margin-left: 500px;
                 background-color: #c4c4cb;
-                /*background-size: cover;*/
-                /*background-position:right;*/
-                /*background-repeat: no-repeat;*/
+                */
             }
         }
 

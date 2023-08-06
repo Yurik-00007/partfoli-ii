@@ -8,7 +8,7 @@ type SkillPropsTytle = {
 
 }
 
-function Skill(props: SkillPropsTytle) {
+export const Skill = (props: SkillPropsTytle) => {
     return (
         <div className={style.skill}>
             <div className={style.skillDivIcon}>
@@ -22,4 +22,3 @@ function Skill(props: SkillPropsTytle) {
     );
 }
 
-export default Skill;

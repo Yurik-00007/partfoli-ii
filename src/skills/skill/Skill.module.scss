@@ -26,6 +26,11 @@
       background: $bthColor;
       top: 0;
       z-index: 99;
+      &:hover{
+        background: #F5F5F5;
+        //color: $bthColor;
+        transition: all 0.3s ease-in-out;
+      }
 
       .skillIcon {
         width: 60px;
@@ -37,6 +42,7 @@
 
       }
     }
+
   }
 
   .skillTitle {

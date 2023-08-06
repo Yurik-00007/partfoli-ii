@@ -5,9 +5,9 @@ import {Title} from "../common/components/title/Title";
 import {Bth} from "../common/components/bth/Bth";
 
 
-function Hair() {
+export const Hair = () => {
     return (
-        <div className={style.hireBlock}>
+        <div id={'hair'} className={style.hireBlock}>
             <div className={`${styleContainer.container} ${style.hireContainer}`}>
                 <Title text={'Remote Work'}/>
                 <Bth name={'CLICK ME'}/>
@@ -16,4 +16,3 @@ function Hair() {
     );
 }
 
-export default Hair;

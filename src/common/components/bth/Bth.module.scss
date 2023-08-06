@@ -1,7 +1,6 @@
 @import "../../styles/sass/variables";
 
 .projectBth {
-  padding: 10px 20px;
   line-height: 46px;
   background: $bthColor;
   padding: 0 30px;
@@ -14,6 +13,14 @@
  box-shadow: 0 3px 10px 0 rgba(0,0,0,.1);
   border-radius: 50px;
   margin: 30px auto;
+  z-index: 1;
+  position: relative;
+
+  &:hover{
+    background: #333;
+    color: $bthColor;
+    transition: all 0.3s ease-in-out;
+  }
 }
 
 

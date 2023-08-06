@@ -1,0 +1,33 @@
+@import "../../common/styles/sass/variables";
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+
+@media screen and (max-width: 400px) {
+display: none;
+}
+  a {
+    padding: 0.5rem 1rem;
+    color: #333;
+    font-size: 13px;
+    font-family: $labelFontFamily;
+    font-weight: 400;
+    line-height: calc(30 / 18);
+    text-decoration: none;
+    transition: text-shadow 0.2s ease;
+
+    &:hover {
+      color: #333;;
+      text-decoration: none;
+      text-shadow: 1px 2px 8px black;
+    }
+  }
+
+  .active {
+    color: #333;;
+    font-weight: 700;
+  }
+}

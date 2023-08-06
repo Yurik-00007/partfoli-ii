@@ -1,0 +1,96 @@
+@import "../../common/styles/sass/variables";
+
+.burgerNav {
+  width: 100%;
+  height: 100%;
+  background-color: #d3cccc;
+  //position: relative;
+
+
+  .burgerNavItems {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: $bthColor;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    //display: none;
+    transform: translate(0,-200px);
+    transition: 0.7s;
+
+    a {
+      padding: 0.5rem 1rem;
+      color: #333;
+      font-size: 13px;
+      font-family: $labelFontFamily;
+      font-weight: 400;
+      line-height: calc(30 / 18);
+      text-decoration: none;
+
+      &:hover {
+        color: #333;;
+        font-weight: 700;
+
+        text-decoration: none;
+      }
+    }
+
+    .active {
+      color: #333;;
+      font-weight: 700;
+    }
+
+  }
+
+  .show {
+    //display: flex;
+    transform: translate(0,0);
+  }
+
+  .burgerBtn {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #F6F6F6;
+    z-index: 6;
+    position: absolute;
+    top: 14px;
+    right: 0;
+    margin-right: 10px;
+
+    .burgerDiv1 {
+      position: absolute;
+      top: 60%;
+      left: 26%;
+      width: 50%;
+      border: 1px solid;
+    }
+
+    .burgerDiv2 {
+      position: absolute;
+      top: 50%;
+      left: 26%;
+      width: 50%;
+      border: 1px solid;
+    }
+
+    .burgerDiv3 {
+      position: absolute;
+      top: 41%;
+      left: 26%;
+      width: 50%;
+      border: 1px solid;
+    }
+
+  }
+
+
+  @media screen and (min-width: 400px) {
+    display: none;
+  }
+
+
+}

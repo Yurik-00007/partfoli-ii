@@ -1,9 +1,14 @@
 @import "./common/styles/sass/variables";
-.App .appDiv:nth-child(2n) {
-    background-color: $bgTextColor;
+.App div{
+    //display: flex;
+    //justify-content: center;
+    //align-items: center;
 }
 
-/*
-background-color: #F5F5F5;
-*/
+.App .appDiv:nth-child(2n) {
+    background-color: $bgTextColor;
+
+}
+
+
 

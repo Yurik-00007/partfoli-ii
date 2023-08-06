@@ -9,9 +9,10 @@ type ProjectPropsType ={
 
 }
 
-function Project(props:ProjectPropsType) {
+export const Project=(props:ProjectPropsType)=> {
     return (
         <div className={style.project}>
+
             <div className={style.projectImg} style={props.style}>
 {/*
             <a className={style.projectBth}>Смотреть</a>
@@ -24,4 +25,3 @@ function Project(props:ProjectPropsType) {
     );
 }
 
-export default Project;
