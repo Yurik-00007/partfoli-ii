@@ -3,12 +3,11 @@ import style from './Bth.module.scss';
 
 export type BthPropsType={
     name:string
+    bthType?: "submit"
 }
 
 export const Bth = (props:BthPropsType) => {
     return (
-                < >
-                    <a className={style.projectBth}>{props.name}</a>
-                </>
+                    <button type={props.bthType} className={style.projectBth}>{props.name}</button>
     );
 }

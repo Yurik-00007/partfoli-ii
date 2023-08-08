@@ -31,7 +31,7 @@ export const Contacts = () => {
 
             axios
                 //.post('http://localhost:3010/sendMessage', data)
-                .post('https://vercel.com/yurik-00007/gmail-node-js/sendMessage', data)
+                .post('https://gmail-node-js-one.vercel.app/sendMessage', data,)
                 .then((res) => {
                     alert('Ваше сообщение отправлено');
                 })
@@ -58,8 +58,8 @@ export const Contacts = () => {
                     <input type={'text'} placeholder="Your email" name="contacts"/>
                     <label className={style.contactsLabel} >MESSAGE</label>
                     <textarea placeholder="Please write what you want" name="message"/>
-                    <button  type={"submit"}>Submit</button>
-                    {/*<Bth type={'submit'} name={'SUBMIT'}/>*/}
+                    {/*<button  type={"submit"}>Submit</button>*/}
+                    <Bth bthType={'submit'} name={'SUBMIT'}/>
                 </form>
                 <div className={style.contactsBig}>
                     <div className={style.contactsSmall}>
