@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useRef, useState} from 'react';
 import style from './Сontacts.module.scss'
 import styleContainer from '../common/styles/Container.module.scss'
 import {Simulate} from "react-dom/test-utils";
@@ -8,25 +8,58 @@ import {Title} from "../common/components/title/Title";
 import {Bth} from "../common/components/bth/Bth";
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faHouse, faPhoneVolume, faEnvelope} from '@fortawesome/free-solid-svg-icons'
+import axios from "axios";
 
 export const Contacts = () => {
+    //const [formEl, setFormEl] = useState<HTMLFormElement | null>(null);
+    const formEl = useRef(null);
     const bgImg = {
         backgroundImage: `url(${bgImg1})`,
     }
+
+
+    const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+        e.preventDefault();
+        console.log(formEl.current)
+        if (formEl.current) {
+            const formData = new FormData(formEl.current);
+            const data: { [key: string]: any } = {};
+
+            formData.forEach((value, key) => {
+                data[key] = value;
+            });
+
+            axios
+                //.post('http://localhost:3010/sendMessage', data)
+                .post('https://vercel.com/yurik-00007/gmail-node-js/sendMessage', data)
+                .then((res) => {
+                    alert('Ваше сообщение отправлено');
+                })
+                .catch((error) => {
+                    alert('Произошла ошибка при отправке сообщения');
+                });
+        }
+    };
+
     return (
         <div id={'contacts'} className={style.contactsBlock} style={bgImg}>
 
             <div className={`${styleContainer.container} ${style.contactsContainer}`}>
                 <Title text={'Contact Me'}/>
 
-                <form className={style.contactsForm}>
+                <form id={'contactForm'}
+                      className={style.contactsForm}
+                      ref={formEl}
+                      onSubmit={handleSubmit}
+                >
                     <label className={style.contactsLabel}>NAME</label>
-                    <input type={'text'}/>
-                    <label className={style.contactsLabel}>EMAIL</label>
-                    <input type={'text'}/>
-                    <label className={style.contactsLabel}>MESSAGE</label>
-                    <textarea/>
-                    <Bth name={'SUBMIT'}/>
+                    <input type={'text'} placeholder="Your name" name="name"/>
+                    <label className={style.contactsLabel} >EMAIL</label>
+                    <input type={'text'} placeholder="Your email" name="contacts"/>
+                    <label className={style.contactsLabel} >MESSAGE</label>
+                    <textarea placeholder="Please write what you want" name="message"/>
+                    <button  type={"submit"}>Submit</button>
+                    {/*<Bth type={'submit'} name={'SUBMIT'}/>*/}
                 </form>
                 <div className={style.contactsBig}>
                     <div className={style.contactsSmall}>
