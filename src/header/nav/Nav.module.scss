@@ -17,6 +17,7 @@ display: none;
     font-weight: 400;
     line-height: calc(30 / 18);
     text-decoration: none;
+    cursor: pointer;
     transition: text-shadow 0.2s ease;
 
     &:hover {
