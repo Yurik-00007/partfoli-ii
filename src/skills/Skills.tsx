@@ -15,7 +15,7 @@ export const Skills = () => {
     return (
         <div id={'skills'} className={style.skillsBlock}>
             <div className={`${styleContainer.container} ${style.skillsContainer}`}>
-                {/*<h3 className={style.skillsTitle}>Skills</h3>*/}
+                {/*<h3 className={style.skillsTitle}>Навыки</h3>*/}
                 <Title text={'Навыки'}/>
                 <p className={style.skillsText}>Стек и процессы, с которыми работал в команде: интерфейсы на React и Next.js, передача данных через REST, GraphQL и WebSocket, работа по Scrum от задачи в Jira до код-ревью, CI/CD и деплоя.</p>
                 <div className={style.skills}>

@@ -6,7 +6,7 @@ type ProjectPropsType ={
     title:string
     style:{}
     description:string
-
+    href: string
 }
 
 export const Project=(props:ProjectPropsType)=> {
@@ -14,10 +14,7 @@ export const Project=(props:ProjectPropsType)=> {
         <div className={style.project}>
 
             <div className={style.projectImg} style={props.style}>
-{/*
-            <a className={style.projectBth}>Смотреть</a>
-*/}
-                <Bth name={'VIEW'}/>
+                <Bth name={'Смотреть'} href={props.href}/>
             </div>
             <h3 className={style.projectTitle}>{props.title}</h3>
             <span className={style.projectDescription}>{props.description}</span>

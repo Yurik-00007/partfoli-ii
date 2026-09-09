@@ -8,7 +8,7 @@ export type TitlePropsType = {
 export const Title = (props: TitlePropsType) => {
     return (
         < >
-            <h3 className={(props.text === 'Contact Me')
+            <h3 className={(props.text === 'Contact Me' || props.text === 'Контакты')
                 ? style.genTitleWhite : style.genTitle}>{props.text}</h3>
         </>
     );

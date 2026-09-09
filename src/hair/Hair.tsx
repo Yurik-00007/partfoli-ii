@@ -9,8 +9,8 @@ export const Hair = () => {
     return (
         <div id={'hire'} className={style.hireBlock}>
             <div className={`${styleContainer.container} ${style.hireContainer}`}>
-                <Title text={'Remote Work'}/>
-                <Bth name={'CLICK ME'}/>
+                <Title text={'Открыт к сотрудничеству'}/>
+                <Bth name={'Обсудить проект'} to={'contacts'}/>
             </div>
         </div>
     );
