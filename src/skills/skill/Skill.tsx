@@ -1,14 +1,13 @@
 import React from 'react';
 import style from './Skill.module.scss'
 
-type SkillPropsTytle = {
+type SkillPropsType = {
     title: string
     icon: string
-    description: string
-
+    items: readonly string[]
 }
 
-export const Skill = (props: SkillPropsTytle) => {
+export const Skill = (props: SkillPropsType) => {
     return (
         <div className={style.skill}>
             <div className={style.skillDivIcon}>
@@ -17,8 +16,11 @@ export const Skill = (props: SkillPropsTytle) => {
                 </div>
             </div>
             <h3 className={style.skillTitle}>{props.title}</h3>
-            <span className={style.skillDescription}>{props.description}</span>
+            <ul className={style.skillList}>
+                {props.items.map((item) => (
+                    <li key={item} className={style.skillItem}>{item}</li>
+                ))}
+            </ul>
         </div>
     );
 }
-

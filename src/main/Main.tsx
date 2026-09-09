@@ -32,11 +32,9 @@ export const Main=() =>{
                 <div className={style.mainTextBlock}>
 
                     <h3 className={style.mainTitle}>
-                        Hello Everybody!
+                        Frontend-разработчик
                     </h3>
-                    <p className={style.mainText}>I’m a UI/UX Designer, Front End Developer & Traveler. I’m from Lorem ipsum dolor sit amet,
-                        consectetur adipiscing elit. Nullam scelerisque consectetur arcu eu lacinia. Vivamus sem sem,
-                        ornare in nibh et, fermentum luctus metus.</p>
+                    <p className={style.mainText}>Окончивший обучение в IT-Incubator с последующей годовой стажировкой. В составе команды разрабатывал веб-приложение на <span className={style.tech}>Next.js</span> с использованием <span className={style.tech}>React</span>, <span className={style.tech}>TypeScript</span>, <span className={style.tech}>RTK Query</span>, <span className={style.tech}>GraphQL</span> и <span className={style.tech}>WebSocket</span>. Создавал адаптивные пользовательские интерфейсы, интегрировал <span className={style.tech}>REST API</span> и <span className={style.tech}>GraphQL</span>, реализовывал функциональность в реальном времени (чат, обновление данных без перезагрузки страницы). В процессе командной разработки по <span className={style.tech}>Scrum</span> брал задачи из <span className={style.tech}>Jira</span>, участвовал в спринтах, ежедневных созвонах, код-ревью и совместной разработке с использованием <span className={style.tech}>Git</span>.</p>
 
                 </div>
                 <Tilt className={style.tilt} options={defaultOptions} >

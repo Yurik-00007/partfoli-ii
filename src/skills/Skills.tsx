@@ -4,7 +4,6 @@ import styleContainer from '../common/styles/Container.module.scss'
 import icon1 from "../assets/img/icon_3.svg";
 import icon2 from "../assets/img/icon_2.svg";
 import icon3 from "../assets/img/icon_1.svg";
-import {Bth} from "../common/components/bth/Bth";
 import {Title} from "../common/components/title/Title";
 import {Fade} from "react-awesome-reveal";
 import {Skill} from "./skill/Skill";
@@ -17,33 +16,48 @@ export const Skills = () => {
         <div id={'skills'} className={style.skillsBlock}>
             <div className={`${styleContainer.container} ${style.skillsContainer}`}>
                 {/*<h3 className={style.skillsTitle}>Skills</h3>*/}
-                <Title text={'Skills'}/>
-                <p className={style.skillsText}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mauris
-                    arcu,
-                    lobortis id interdum vitae, interdum eget elit. Curabitur quis urna nulla.
-                    Suspendisse potenti. Duis suscipit ultrices maximus.
-                </p>
+                <Title text={'Навыки'}/>
+                <p className={style.skillsText}>Стек и процессы, с которыми работал в команде: интерфейсы на React и Next.js, передача данных через REST, GraphQL и WebSocket, работа по Scrum от задачи в Jira до код-ревью, CI/CD и деплоя.</p>
                 <div className={style.skills}>
                     <Fade cascade damping={0.3}>
 
-                        <Skill title={'HTML/CSS'}
-                               icon={icon1}
-                               description={'' +
-                                   'Lorem ipsum dolor sit amet,\n' +
-                                   'consectetur adipisicing elit. Blanditiis earum eveniet harum,\n'}
+                        <Skill
+                            title={'Frontend Development'}
+                            icon={icon1}
+                            items={[
+                                'React',
+                                'Next.js',
+                                'TypeScript',
+                                'JavaScript (ES6+)',
+                                'HTML5',
+                                'CSS3/SCSS',
+                                'Tailwind',
+                            ]}
                         />
-                        <Skill title={'REACT'}
-                               icon={icon2}
-                               description={'' +
-                                   'Lorem ipsum dolor sit amet,\n' +
-                                   'veniam voluptatem, voluptates. Atque earum laudantium rem velit. Dolor, ducimus.'}
+                        <Skill
+                            title={'State & Data'}
+                            icon={icon2}
+                            items={[
+                                'Redux Toolkit',
+                                'RTK Query',
+                                'Context API',
+                                'REST API',
+                                'GraphQL',
+                                'WebSocket',
+                            ]}
                         />
-
-                        <Skill title={'REDUX'}
-                               icon={icon3}
-                               description={
-                                   'Lorem ipsum dolor sit amet,\n' +
-                                   'consectetur adipisicing elit. Blanditiis earum eveniet harum.'}
+                        <Skill
+                            title={'Tools & Workflow'}
+                            icon={icon3}
+                            items={[
+                                'Git',
+                                'GitHub',
+                                'Webstorm/VS Code',
+                                'Jira',
+                                'Scrum',
+                                'CI/CD (Vercel)',
+                                'Figma',
+                            ]}
                         />
                     </Fade>
 
