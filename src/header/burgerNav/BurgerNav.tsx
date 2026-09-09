@@ -7,7 +7,9 @@ export const BurgerNav = () => {
     const [menuIsOpen,setMenuIsOpen]=useState<boolean>(false);
     const onBurgerBtnClick=()=>{
         setMenuIsOpen(!menuIsOpen)
-        console.log(menuIsOpen)
+    }
+    const closeMenu=()=>{
+        setMenuIsOpen(false)
     }
     return (
         <div className={style.burgerNav}>
@@ -17,10 +19,11 @@ export const BurgerNav = () => {
                     to="main"
                     spy={true}
                     smooth={true}
-                    offset={1}
+                    offset={-90}
                     duration={500}
+                    onClick={closeMenu}
                 >
-                    MAIN
+                    Главная
                 </Link>
 
                 <Link
@@ -28,30 +31,33 @@ export const BurgerNav = () => {
                     to="skills"
                     spy={true}
                     smooth={true}
-                    offset={1}
+                    offset={-90}
                     duration={500}
+                    onClick={closeMenu}
                 >
-                    SKILLS
+                    Навыки
                 </Link>
                 <Link
                     activeClass={style.active}
                     to="projects"
                     spy={true}
                     smooth={true}
-                    offset={1}
+                    offset={-90}
                     duration={500}
+                    onClick={closeMenu}
                 >
-                    PROJECTS
+                    Проекты
                 </Link>
                 <Link
                     activeClass={style.active}
-                    to="hair"
+                    to="hire"
                     spy={true}
                     smooth={true}
-                    offset={1}
+                    offset={-90}
                     duration={500}
+                    onClick={closeMenu}
                 >
-                    HIRE
+                    Нанять
                 </Link>
 
                 <Link
@@ -59,10 +65,11 @@ export const BurgerNav = () => {
                     to="contacts"
                     spy={true}
                     smooth={true}
-                    offset={1}
+                    offset={-90}
                     duration={500}
+                    onClick={closeMenu}
                 >
-                    CONTACT
+                    Контакты
                 </Link>
             </div>
             <div onClick={onBurgerBtnClick} className={style.burgerBtn}>

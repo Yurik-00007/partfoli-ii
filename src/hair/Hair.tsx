@@ -7,7 +7,7 @@ import {Bth} from "../common/components/bth/Bth";
 
 export const Hair = () => {
     return (
-        <div id={'hair'} className={style.hireBlock}>
+        <div id={'hire'} className={style.hireBlock}>
             <div className={`${styleContainer.container} ${style.hireContainer}`}>
                 <Title text={'Remote Work'}/>
                 <Bth name={'CLICK ME'}/>

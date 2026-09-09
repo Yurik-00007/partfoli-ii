@@ -2,6 +2,7 @@ import React from 'react';
 import style from './Nav.module.scss'
 import { Link } from "react-scroll";
 
+const HEADER_OFFSET = -90;
 
 export const Nav=()=> {
     return (
@@ -11,10 +12,10 @@ export const Nav=()=> {
                 to="main"
                 spy={true}
                 smooth={true}
-                offset={1}
+                    offset={HEADER_OFFSET}
                 duration={500}
             >
-                MAIN
+                Главная
             </Link>
 
             <Link
@@ -22,10 +23,10 @@ export const Nav=()=> {
                 to="skills"
                 spy={true}
                 smooth={true}
-                offset={1}
+                    offset={HEADER_OFFSET}
                 duration={500}
             >
-                SKILLS
+                Навыки
             </Link>
 
             <Link
@@ -33,21 +34,21 @@ export const Nav=()=> {
                 to="projects"
                 spy={true}
                 smooth={true}
-                offset={1}
+                    offset={HEADER_OFFSET}
                 duration={500}
             >
-                PROJECTS
+                Проекты
             </Link>
 
             <Link
                 activeClass={style.active}
-                to="hair"
+                to="hire"
                 spy={true}
                 smooth={true}
-                offset={1}
+                    offset={HEADER_OFFSET}
                 duration={500}
             >
-                HIRE
+                Нанять
             </Link>
 
             <Link
@@ -55,10 +56,10 @@ export const Nav=()=> {
                 to="contacts"
                 spy={true}
                 smooth={true}
-                offset={1}
+                    offset={HEADER_OFFSET}
                 duration={500}
             >
-                CONTACT
+                Контакты
             </Link>
         </div>
     );
