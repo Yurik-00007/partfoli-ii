@@ -7,6 +7,7 @@ export type BthPropsType={
     bthType?: "submit"
     href?: string
     to?: string
+    download?: string
 }
 
 export const Bth = (props:BthPropsType) => {
@@ -30,8 +31,9 @@ export const Bth = (props:BthPropsType) => {
             <a
                 href={props.href}
                 className={style.projectBth}
-                target="_blank"
-                rel="noopener noreferrer"
+                {...(props.download
+                    ? {download: props.download}
+                    : {target: '_blank', rel: 'noopener noreferrer'})}
             >
                 {props.name}
             </a>
