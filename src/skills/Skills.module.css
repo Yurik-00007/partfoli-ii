@@ -1,0 +1,36 @@
+.skillsBlock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding-bottom: 100px;
+}
+.skillsBlock .skillsContainer {
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+}
+.skillsBlock .skillsContainer .skillsText {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.6666666667;
+  color: #666;
+  text-align: center;
+  margin-top: -30px;
+}
+.skillsBlock .skillsContainer .skills {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 1131px) {
+  .skillsBlock .skillsContainer .skills {
+    justify-content: space-around;
+    gap: 20px;
+  }
+}
+
+/*# sourceMappingURL=Skills.module.css.map */

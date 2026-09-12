@@ -1,0 +1,104 @@
+.contactsBlock {
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  padding-bottom: 100px;
+}
+.contactsBlock::after {
+  content: "";
+  position: absolute;
+  background-color: black;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.5;
+}
+
+.contactsContainer {
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contactsForm {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  position: relative;
+  z-index: 1;
+}
+@media screen and (max-width: 700px) {
+  .contactsForm {
+    width: 100%;
+  }
+}
+
+.contactsLabel {
+  color: #ccc;
+  font-size: 13px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  line-height: 1.6666666667;
+}
+
+.contactsForm input,
+.contactsForm textarea {
+  border-radius: 3px;
+  width: 90%;
+  padding: 8px 15px;
+  border: none;
+  margin-bottom: 15px;
+}
+
+.contactsBig {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  z-index: 1;
+}
+@media screen and (max-width: 552px) {
+  .contactsBig {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.contBigSpan {
+  margin-bottom: 10px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  color: #fff;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.fontAwesomeIcon {
+  margin-right: 10px;
+}
+
+.contactsSmall {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
+}
+
+.contSmallSpan {
+  font-family: Lato, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  background-color: transparent;
+  color: #fff;
+  line-height: 1.6666666667;
+  margin-left: 10px;
+}
+
+/*# sourceMappingURL=Contacts.module.css.map */

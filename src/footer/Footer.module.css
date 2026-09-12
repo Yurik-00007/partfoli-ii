@@ -1,0 +1,48 @@
+.footerBlock {
+  min-height: 30vh;
+  display: flex;
+  align-items: center;
+  background-color: #0E0E0E;
+}
+.footerBlock .footerContainer {
+  min-height: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.footerBlock .footerContainer .socialIcons {
+  min-width: 250px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.footerBlock .footerContainer .socialIcons .socialIcon {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #878787;
+  text-decoration: none;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+.footerBlock .footerContainer .socialIcons .socialIcon:hover {
+  background-color: #333;
+  transform: translateY(-2px);
+}
+.footerBlock .footerContainer .footerTitle {
+  text-align: center;
+  margin: 0 auto;
+  color: #999;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.6666666667;
+}
+.footerBlock .footerContainer .socialHeart {
+  margin: 0 5px;
+}
+
+/*# sourceMappingURL=Footer.module.css.map */

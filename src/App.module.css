@@ -1,0 +1,5 @@
+.App .appDiv:nth-child(2n) {
+  background-color: #fff;
+}
+
+/*# sourceMappingURL=App.module.css.map */

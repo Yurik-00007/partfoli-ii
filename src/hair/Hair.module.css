@@ -1,0 +1,85 @@
+.hireBlock {
+  display: flex;
+  align-items: center;
+  min-height: 50vh;
+  scroll-margin-top: 90px;
+  padding-top: 90px;
+  padding-bottom: 100px;
+}
+.hireBlock .hireContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.hireBlock .hireButtons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+.certificateThumb {
+  width: 160px;
+  padding: 0;
+  margin: 8px 0 4px;
+  border: 1px solid #e6e0d4;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.certificateThumb img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.certificateThumb:hover {
+  transform: scale(1.06);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.14);
+}
+
+.certificateDialog {
+  border: none;
+  padding: 0;
+  background: transparent;
+  max-width: min(920px, 94vw);
+  max-height: 92vh;
+}
+.certificateDialog::backdrop {
+  background: rgba(0, 0, 0, 0.72);
+}
+
+.certificateDialogInner {
+  position: relative;
+  background: #fff;
+  border-radius: 10px;
+  padding: 16px;
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.28);
+}
+.certificateDialogInner img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 82vh;
+  object-fit: contain;
+}
+
+.certificateClose {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  width: 36px;
+  height: 36px;
+  border: none;
+  border-radius: 50%;
+  background: #fff537;
+  color: #333;
+  font-size: 28px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=Hair.module.css.map */

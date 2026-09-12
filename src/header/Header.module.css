@@ -1,0 +1,18 @@
+.headerBlock {
+  display: flex;
+  align-items: center;
+  min-height: 10vh;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+.headerBlock .headerContainer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/*# sourceMappingURL=Header.module.css.map */

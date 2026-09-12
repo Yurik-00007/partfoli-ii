@@ -1,0 +1,82 @@
+.burgerNav {
+  width: 100%;
+  height: 100%;
+  background-color: #d3cccc;
+}
+.burgerNav .burgerNavItems {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #fff537;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  transform: translate(0, -200px);
+  transition: 0.7s;
+}
+.burgerNav .burgerNavItems a {
+  padding: 0.5rem 1rem;
+  color: #333;
+  font-size: 13px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  line-height: 1.6666666667;
+  text-decoration: none;
+  cursor: pointer;
+}
+.burgerNav .burgerNavItems a:hover {
+  color: #333;
+  font-weight: 700;
+  text-decoration: none;
+}
+.burgerNav .burgerNavItems .active {
+  color: #333;
+  font-weight: 700;
+}
+.burgerNav .show {
+  transform: translate(0, 0);
+}
+.burgerNav .burgerBtn {
+  width: 60px;
+  height: 60px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background-color: #F6F6F6;
+  z-index: 6;
+  position: absolute;
+  top: 14px;
+  right: 0;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.burgerNav .burgerBtn .burgerDiv1 {
+  position: absolute;
+  top: 60%;
+  left: 26%;
+  width: 50%;
+  border: 1px solid;
+}
+.burgerNav .burgerBtn .burgerDiv2 {
+  position: absolute;
+  top: 50%;
+  left: 26%;
+  width: 50%;
+  border: 1px solid;
+}
+.burgerNav .burgerBtn .burgerDiv3 {
+  position: absolute;
+  top: 41%;
+  left: 26%;
+  width: 50%;
+  border: 1px solid;
+}
+@media screen and (min-width: 400px) {
+  .burgerNav {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=BurgerNav.module.css.map */

@@ -1,0 +1,31 @@
+.projectsBlock {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100vh;
+  padding-bottom: 100px;
+}
+.projectsBlock .projectsContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.projectsBlock .projects {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+@media screen and (max-width: 1157px) {
+  .projectsBlock .projects {
+    justify-content: center;
+  }
+}
+.projectsBlock .projects:nth-last-child(1) {
+  padding-bottom: 30px;
+}
+
+/*# sourceMappingURL=Projects.module.css.map */

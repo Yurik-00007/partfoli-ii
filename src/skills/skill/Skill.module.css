@@ -1,0 +1,71 @@
+.skill {
+  border: 1px solid transparent;
+  border-radius: 5%;
+  width: 300px;
+  background-color: #fff;
+  padding: 10px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+}
+.skill .skillDivIcon {
+  width: 120px;
+  height: 120px;
+  position: relative;
+  z-index: 6;
+}
+.skill .skillDivIcon .skillDivIconBG {
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  background: #fff537;
+  top: 0;
+  z-index: 99;
+}
+.skill .skillDivIcon .skillDivIconBG:hover {
+  background: #F5F5F5;
+  transition: all 0.3s ease-in-out;
+}
+.skill .skillDivIcon .skillDivIconBG .skillIcon {
+  width: 60px;
+  position: absolute;
+  top: 25%;
+  left: 75%;
+  margin-left: -50%;
+  z-index: 1;
+}
+.skill .skillTitle {
+  font-family: Poppins, sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  color: #333333;
+  line-height: 1;
+}
+.skill .skillList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  list-style: none;
+  margin: 0;
+  padding: 8px 16px 16px;
+}
+.skill .skillItem {
+  font-family: Lato, sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 1.4;
+  color: #333;
+  background: linear-gradient(transparent 62%, #fff537 62%);
+  padding: 2px 4px;
+  white-space: nowrap;
+  cursor: default;
+  transition: background 0.2s ease;
+}
+.skill .skillItem:hover {
+  background: transparent;
+}
+
+/*# sourceMappingURL=Skill.module.css.map */

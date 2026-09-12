@@ -1,0 +1,25 @@
+@import "../../styles/sass/variables";
+
+.button {
+  line-height: 46px;
+  background: $bthColor;
+  padding: 0 30px;
+  display: inline-block;
+  color: #333;
+  border: 2px solid $bthColor;
+  font-family: Montserrat, sans-serif;
+  font-size: 15px;
+  text-decoration: none;
+  cursor: pointer;
+  box-shadow: 0 3px 10px 0 rgba(0, 0, 0, .1);
+  border-radius: 50px;
+  margin: 30px 8px;
+  z-index: 1;
+  position: relative;
+
+  &:hover {
+    background: #333;
+    color: $bthColor;
+    transition: all 0.3s ease-in-out;
+  }
+}
