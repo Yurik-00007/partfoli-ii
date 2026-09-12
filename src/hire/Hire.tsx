@@ -8,7 +8,7 @@ import {CertificatePreview} from "./CertificatePreview";
 export const Hire = () => {
     return (
         <Section id={'hire'} className={style.hireBlock} containerClassName={style.hireContainer}>
-            <Title text={'Открыт к сотрудничеству'}/>
+            <Title text={'Открыт к сотрудничеству'} className={style.hireTitle}/>
             <CertificatePreview/>
             <div className={style.hireButtons}>
                 <Button name={'Обсудить проект'} to={'contacts'}/>

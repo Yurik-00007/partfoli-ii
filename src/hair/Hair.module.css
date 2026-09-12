@@ -18,6 +18,25 @@
   justify-content: center;
   gap: 12px;
 }
+@media screen and (max-width: 505px) {
+  .hireBlock .hireContainer {
+    width: 100%;
+  }
+  .hireBlock .hireContainer h3 {
+    width: calc(100vw - 32px);
+    max-width: calc(100vw - 32px);
+    font-size: 39px;
+    text-align: center;
+    overflow-wrap: anywhere;
+  }
+  .hireBlock .hireButtons {
+    flex-direction: column;
+    align-items: center;
+  }
+  .hireBlock .hireButtons > * {
+    margin: 8px;
+  }
+}
 
 .certificateThumb {
   width: 160px;

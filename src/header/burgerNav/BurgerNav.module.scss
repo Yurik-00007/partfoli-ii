@@ -13,10 +13,10 @@
     align-items: center;
     flex-wrap: wrap;
     background-color: $bthColor;
-    position: absolute;
+    position: fixed;
     right: 0;
     top: 0;
-    width: 100%;
+    width: 100vw;
     //display: none;
     transform: translate(0,-200px);
     transition: 0.7s;
@@ -57,7 +57,7 @@
     padding: 0;
     border: none;
     border-radius: 50%;
-    background-color: #F6F6F6;
+    background-color: #e1dddd;
     z-index: 6;
     position: absolute;
     top: 14px;
@@ -92,8 +92,12 @@
   }
 
 
-  @media screen and (min-width: 400px) {
+  @media screen and (min-width: 401px) {
     display: none;
+  }
+
+  @media screen and (max-width: 400px) {
+    background-color: transparent;
   }
 
 

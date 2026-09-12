@@ -10,6 +10,10 @@
     width: 100%;
     z-index: 2;
 
+    @media screen and (max-width: 400px) {
+        background-color: transparent;
+    }
+
 
     .headerContainer{
         display: flex;
@@ -19,5 +23,4 @@
 
     }
 }
-
 
