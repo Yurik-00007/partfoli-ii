@@ -1,17 +1,7 @@
 @import "src/common/styles/sass/variables";
 
-@mixin text($fontFamily,$fontSize,$lineHeight) {
-  font-family: $fontFamily;
-  font-size: $fontSize;
-  line-height: $lineHeight;
-  color: $textColor;
-}
-
 @mixin icon() {
   background-size: cover;
-  /*
-  background-position: center;
-  */
   background-repeat: no-repeat;
 }
 
@@ -35,7 +25,6 @@
     background: #ccc;
     bottom: 2px;
     left: 50%;
-    //transform: translate(-50%, 50%);
     margin-left: -45px;
   }
 
@@ -48,8 +37,6 @@
     background: grey;
     bottom: 0;
     left: 50%;
-    //transform: translate(-50%, 50%);
     margin-left: -15px;
   }
-
 }
